@@ -32,7 +32,7 @@ This project is built based on a comprehensive Product Requirements Document (PR
 - **Personalized Recommendations Dashboard**: Visual, prioritized suggestions with impact and effort scores for quick decision-making.
 - **Learning Outcome Correlation**: Maps interactions to metrics like completion rates, quiz scores, and feedback sentiment.
 
-For detailed user stories and specifications, refer to [PRD.md](PRD.md) in the repository.
+For detailed user stories and specifications, refer to [PRD.md](docs/PRD.md) in the repository.
 
 ## Installation
 
@@ -101,7 +101,7 @@ For detailed user stories and specifications, refer to [PRD.md](PRD.md) in the r
    - Select course files and submit.
    - View analysis and recommendations in the dashboard.
 
-For detailed API endpoints, see [API.md](API.md) (coming soon).
+For detailed API endpoints, see [API.md](docs/API.md).
 
 ## Architecture
 
@@ -143,7 +143,7 @@ sequenceDiagram
     Frontend->>Creator: Display dashboard
 ```
 
-For full technical details, see [PRD.md](PRD.md).
+For full technical details, see [PRD.md](docs/PRD.md).
 
 ## Tech Stack
 
