@@ -9,7 +9,7 @@
 
 This document outlines the RESTful API endpoints for the CourseFlow backend. The API handles course uploads, student interaction tracking, AI analysis, and recommendations. All endpoints are prefixed with `/api`.
 
-For setup and usage, refer to [README.md](../README.md). For project overview, see [PRD.md](../PRD.md).
+For setup and usage, refer to [README.md](../README.md). For project overview, see [PRD.md](PRD.md).
 
 ## Table of Contents
 
@@ -278,7 +278,7 @@ fetch('/api/track', {
 });
 ```
 
-For more code snippets, see [CODE_SNIPPETS.md](../CODE_SNIPPETS.md).
+For more code snippets, see [CODE_SNIPPETS.md](CODE_SNIPPETS.md).
 
 ---
 
