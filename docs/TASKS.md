@@ -34,9 +34,18 @@
 - **Steps:**
   1. Run `npm create vite@latest frontend -- --template react-ts`.
   2. Navigate to /frontend and install dependencies: `npm install`.
-  3. Add Tailwind CSS: `npm install -D tailwindcss postcss autoprefixer`, then `npx tailwindcss init -p`.
-  4. Configure tailwind.config.js and index.css as per Tailwind docs.
-  5. Start dev server: `npm run dev` and verify basic app runs.
+  3. Add Tailwind CSS v4 (no PostCSS required by default): `npm install -D tailwindcss @tailwindcss/cli`.
+  4. Create or update `src/index.css` with:
+     ```
+     @import "tailwindcss";
+     ```
+  5. In development, run the Tailwind CLI to generate CSS (example):
+     ```
+     npx tailwindcss -i ./src/index.css -o ./src/tailwind.css --watch
+     ```
+     Import `./src/tailwind.css` in your React entry (e.g., `main.tsx`).
+     Optional theming in Tailwind v4 can be done via `@theme` in CSS.
+  6. Start dev server: `npm run dev` and verify basic app runs.
 
 #### Commit 2: Initialize Backend with Express.js
 - **Message:** `chore: init backend with Express JS`

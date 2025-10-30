@@ -189,9 +189,12 @@ PRs must pass CI checks (lint, tests) before merging.
 
 ### CSS
 
-- Use Tailwind CSS classes.
-- Keep custom CSS minimal.
+- Use Tailwind CSS v4 utility classes.
+- Prefer the CSS-first setup: add `@import "tailwindcss";` in your app stylesheet and, when needed, define design tokens with the `@theme` directive (no PostCSS or `tailwind.config.js` required by default).
+- Keep custom CSS minimal; add tokens via `@theme` rather than sprawling bespoke CSS when possible.
 - Ensure responsive design (mobile-first).
+
+References: see Tailwind CSS v4 docs (`https://tailwindcss.com/blog/tailwindcss-v4`).
 
 ### Documentation
 

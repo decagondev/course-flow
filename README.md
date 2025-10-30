@@ -62,6 +62,30 @@ For detailed user stories and specifications, refer to [PRD.md](docs/PRD.md) in 
      npm install
      ```
 
+   - Tailwind CSS v4 setup (frontend):
+     - Ensure Tailwind v4 is installed (no PostCSS needed by default):
+       ```
+       npm install -D tailwindcss @tailwindcss/cli
+       ```
+     - In your main app stylesheet (e.g., `src/index.css`), add:
+       ```
+       @import "tailwindcss";
+       ```
+     - Run the Tailwind CLI during development/build (example):
+       ```
+       npx tailwindcss -i ./src/index.css -o ./src/tailwind.css --watch
+       ```
+       Then import the generated `./src/tailwind.css` in your React entry (or wire a script in `package.json`).
+     - Optional theming (Tailwind v4): define tokens in CSS using `@theme`:
+       ```
+       @theme {
+         colors: {
+           brand: #0ea5e9;
+         };
+       }
+       ```
+       See Tailwind v4 docs for details.
+
 3. Set up environment variables:
    - Create `.env` files in both frontend and backend directories.
    - Example for backend `.env`:
